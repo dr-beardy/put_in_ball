@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class PlayerMovements : MonoBehaviour
@@ -8,7 +9,7 @@ public class PlayerMovements : MonoBehaviour
     private float m_speed = 6f;
     private float m_jumpForce = 10f;
 
-    [SerializeField] Transform m_groundCheck;
+    [SerializeField] Transform m_groundCheck, m_ballcheck;
     [SerializeField] LayerMask m_mask;
 
     private Animator m_anim;
@@ -16,7 +17,7 @@ public class PlayerMovements : MonoBehaviour
 
     private bool isGrounded, isJumped, isStart;
 
-
+    Ball ball;
 
     private void Awake()
     {
@@ -90,7 +91,6 @@ public class PlayerMovements : MonoBehaviour
         }
 
     }
-
 
 
 

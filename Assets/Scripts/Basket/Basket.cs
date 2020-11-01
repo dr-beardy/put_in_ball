@@ -5,8 +5,9 @@ using UnityEngine;
 public class Basket : MonoBehaviour
 {
     private Animator m_anim;
-    [SerializeField] private Transform m_ballCheck;
+    [SerializeField] private Transform m_ballCheck, m_ballExit;
     [SerializeField] private LayerMask m_mask;
+    private int m_score;
 
     void Awake()
     {
@@ -16,6 +17,8 @@ public class Basket : MonoBehaviour
     private void Start()
     {
         m_anim.SetBool("Ball_in", false);
+        m_score = 0;
+
     }
 
     private void Update()
@@ -24,6 +27,11 @@ public class Basket : MonoBehaviour
         {
             GetComponent<BoxCollider2D>().enabled = true;
         }
+        else if (Physics2D.Raycast(m_ballExit.position, Vector2.down, 0.1f, m_mask))
+        {
+            GetComponent<BoxCollider2D>().enabled = false;
+        }
+        
     }
 
 
@@ -31,7 +39,12 @@ public class Basket : MonoBehaviour
     {
         if (target.tag == Helper.BALL_TAG)
         {
+
             m_anim.SetBool("Ball_in", true);
+            m_score++;
+            GameManager.Instance.AddScore(m_score);
+            SoundsManager.PlaySounds("basket");
+
         }
     }
 

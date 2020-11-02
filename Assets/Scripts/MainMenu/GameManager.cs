@@ -16,8 +16,6 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject m_gameOverPanel;
 
-    Ball ball;
-
     private void Awake()
     {
         if (_instance != null && _instance != this)

@@ -27,7 +27,7 @@ public class Ball : MonoBehaviour
         if(target.gameObject.tag == Helper.PLAYER_TAG)
         {
             sr.material.color = Color.red;
-           // gameObject.tag = "DeadBall";
+            //deadBall = true;
             StartCoroutine(Wait());
 
         }
@@ -43,7 +43,7 @@ public class Ball : MonoBehaviour
 
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.7f);
         GetComponent<BoxCollider2D>().enabled = true;
     }
 
@@ -61,14 +61,6 @@ public class Ball : MonoBehaviour
 
 
 
-/* TODO: 
- * fix duration of ball spawning 
-*  Add pause panel 
-*  add gameOver panel 
-*  add menu
-*
-*
-*/
 
 
 

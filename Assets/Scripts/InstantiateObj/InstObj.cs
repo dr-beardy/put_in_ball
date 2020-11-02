@@ -19,12 +19,6 @@ public class InstObj : MonoBehaviour
 
     }
 
-    private void Update()
-    {
-       
-    }
-
-
 
     IEnumerator InstantiatObjects()
     {

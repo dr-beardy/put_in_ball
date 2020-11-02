@@ -738,7 +738,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e11cd516e1619c848b3135ea8c06babc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1121,7 +1121,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 9, y: -27.799988}
+  m_AnchoredPosition: {x: 9, y: -27.799927}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &686414228
@@ -1560,7 +1560,7 @@ GameObject:
   - component: {fileID: 1057179256}
   - component: {fileID: 1057179255}
   m_Layer: 5
-  m_Name: Score
+  m_Name: UIScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1582,7 +1582,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -95.29999, y: -27.799988}
+  m_AnchoredPosition: {x: -95.30005, y: -27.799927}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1057179255
@@ -2904,12 +2904,12 @@ PrefabInstance:
     - target: {fileID: 595117376388469094, guid: 80b4e6be6d96ee043a0f29d3cd9c88ba,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4308892529944430486, guid: 80b4e6be6d96ee043a0f29d3cd9c88ba,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.162
+      value: 0.057
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80b4e6be6d96ee043a0f29d3cd9c88ba, type: 3}

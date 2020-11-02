@@ -41,8 +41,7 @@ public class Basket : MonoBehaviour
         {
 
             m_anim.SetBool("Ball_in", true);
-            m_score++;
-            GameManager.Instance.AddScore(m_score);
+
             SoundsManager.PlaySounds("basket");
 
         }
@@ -53,6 +52,8 @@ public class Basket : MonoBehaviour
         if (target.tag == Helper.BALL_TAG)
         {
             m_anim.SetBool("Ball_in", false);
+            m_score++;
+            GameManager.Instance.AddScore(m_score);
         }
     }
 

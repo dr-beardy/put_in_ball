@@ -6,18 +6,26 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-/*    public Text scoretext;
-    private float m_scorePoint;
+    private Text m_scoretext;
+    private int m_scorePoint;
 
-
-    public void UpdateScore()
+    private void Start()
     {
-        m_scorePoint++;
-        scoretext.text = "Score: " + m_scorePoint;
+        m_scoretext = GameObject.Find("UIScore").GetComponent<Text>();
     }
-*/
 
 
+
+
+
+    private void OnTriggerEnter2D(Collider2D target)
+    {
+        if (target.tag == Helper.BASKET_TAG)
+        {
+            m_scorePoint++;
+            m_scoretext.text = "Score: " + m_scorePoint;
+        }
+    }
 
 
 

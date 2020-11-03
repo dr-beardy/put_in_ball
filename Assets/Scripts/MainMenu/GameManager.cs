@@ -11,8 +11,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get { return _instance; } }
 
     public Text scoreText, scoreGameover, scorePausePanel, countBallText;
-    private int score;
-    private int countBall;
+    private int m_score;
+    private int m_countBall;
 
     [SerializeField] private GameObject m_gameOverPanel;
 
@@ -32,8 +32,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        score = 0;
-        countBall = 10;
+        m_score = 0;
+        m_countBall = 10;
         UpdateScore();
         
     }
@@ -41,38 +41,38 @@ public class GameManager : MonoBehaviour
 
     public void AddScore(int newScoreValue)
     {
-        score += newScoreValue;
+        m_score += newScoreValue;
         UpdateScore();
     }
 
     void UpdateScore()
     {
-        scoreText.text = "Score: " + score;
-        scoreGameover.text = "" + score;
-        scorePausePanel.text = "" +  score;
+        scoreText.text = "Score: " + m_score;
+        scoreGameover.text = "" + m_score;
+        scorePausePanel.text = "" +  m_score;
     }
 
     public void BallNumber()
     {
 
-        countBall -= 1;
+        m_countBall -= 1;
         UpdateCountBall();
 
-        if (countBall == 0)
-            countBall = 0;
+        if (m_countBall == 0)
+            m_countBall = 0;
 
     }
 
 
     void UpdateCountBall()
     {
-        countBallText.text = "Ball: " + countBall;
+        countBallText.text = "Ball: " + m_countBall;
     }
 
     public void ShowGameoverPanel()
     {
 
-        if(countBall <= 0)
+        if(m_countBall <= 0)
         {
             m_gameOverPanel.SetActive(true);
             Time.timeScale = 0;

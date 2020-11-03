@@ -2660,6 +2660,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1737440533}
   m_CullTransparentMesh: 0
+--- !u!1 &1909863620 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 595117376160426906, guid: 80b4e6be6d96ee043a0f29d3cd9c88ba,
+    type: 3}
+  m_PrefabInstance: {fileID: 595117375474599167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &1909863623
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909863620}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.16, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -1.9588592, y: 0.34821185}
+      - {x: -1.9560506, y: 0.35479674}
+      - {x: 1.64326, y: 0.36724266}
 --- !u!4 &1993229674 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2125153296328988841, guid: 794c866bfa740ec4583bd9d6feae8f82,
@@ -2825,6 +2859,56 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 595117376126546173, guid: 80b4e6be6d96ee043a0f29d3cd9c88ba,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.573
+      objectReference: {fileID: 0}
+    - target: {fileID: 595117376126546174, guid: 80b4e6be6d96ee043a0f29d3cd9c88ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: BallScore
+      objectReference: {fileID: 0}
+    - target: {fileID: 595117376160426902, guid: 80b4e6be6d96ee043a0f29d3cd9c88ba,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 595117376160426902, guid: 80b4e6be6d96ee043a0f29d3cd9c88ba,
+        type: 3}
+      propertyPath: m_EdgeRadius
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 595117376160426902, guid: 80b4e6be6d96ee043a0f29d3cd9c88ba,
+        type: 3}
+      propertyPath: m_AutoTiling
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 595117376160426902, guid: 80b4e6be6d96ee043a0f29d3cd9c88ba,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -2.308978
+      objectReference: {fileID: 0}
+    - target: {fileID: 595117376160426902, guid: 80b4e6be6d96ee043a0f29d3cd9c88ba,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.6063547
+      objectReference: {fileID: 0}
+    - target: {fileID: 595117376160426902, guid: 80b4e6be6d96ee043a0f29d3cd9c88ba,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.35164732
+      objectReference: {fileID: 0}
+    - target: {fileID: 595117376160426902, guid: 80b4e6be6d96ee043a0f29d3cd9c88ba,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.0064555407
+      objectReference: {fileID: 0}
+    - target: {fileID: 595117376160426903, guid: 80b4e6be6d96ee043a0f29d3cd9c88ba,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 595117376160426905, guid: 80b4e6be6d96ee043a0f29d3cd9c88ba,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -2909,9 +2993,20 @@ PrefabInstance:
     - target: {fileID: 4308892529944430486, guid: 80b4e6be6d96ee043a0f29d3cd9c88ba,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.057
+      value: -0.039
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4308892529944430486, guid: 80b4e6be6d96ee043a0f29d3cd9c88ba,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.489
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308892529944430486, guid: 80b4e6be6d96ee043a0f29d3cd9c88ba,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 595117376160426902, guid: 80b4e6be6d96ee043a0f29d3cd9c88ba, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 80b4e6be6d96ee043a0f29d3cd9c88ba, type: 3}
 --- !u!1001 &1568295421413622484
 PrefabInstance:

@@ -134,7 +134,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3bb7207e252b164d9350ae6a3096236, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sr: {fileID: 0}
+  m_checkGoals: {fileID: 0}
+  m_mask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!61 &7030726583072151509
 BoxCollider2D:
   m_ObjectHideFlags: 0

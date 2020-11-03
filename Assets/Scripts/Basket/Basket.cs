@@ -7,7 +7,7 @@ public class Basket : MonoBehaviour
     private Animator m_anim;
     [SerializeField] private Transform m_ballCheck, m_ballExit;
     [SerializeField] private LayerMask m_mask;
-    private int m_score;
+    //private int m_score;
 
     void Awake()
     {
@@ -17,7 +17,7 @@ public class Basket : MonoBehaviour
     private void Start()
     {
         m_anim.SetBool("Ball_in", false);
-        m_score = 0;
+        //m_score = 0;
 
     }
 
@@ -52,8 +52,8 @@ public class Basket : MonoBehaviour
         if (target.tag == Helper.BALL_TAG)
         {
             m_anim.SetBool("Ball_in", false);
-            m_score++;
-            GameManager.Instance.AddScore(m_score);
+            /*m_score++;
+            GameManager.Instance.AddScore(m_score);*/
         }
     }
 
